@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d8fdff"
+    tools:context=".UpdateActivity">
+
+    <!--    change context to UpdateItemActivity-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/product_image_view_update"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_file_upload_black_24dp"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/product_image_view_update"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="UPLOAD IMAGE"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Product\nName:"
+            android:textStyle="bold"
+            android:fontFamily="@font/aclonica"
+            android:textColor="@android:color/black"
+            android:textSize="23sp"/>
+
+        <EditText
+            android:id="@+id/product_name_edit_text_update"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter product\nname"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Quantity:"
+            android:textStyle="bold"
+            android:fontFamily="@font/aclonica"
+            android:textColor="@android:color/black"
+            android:textSize="23sp"/>
+
+        <EditText
+            android:id="@+id/product_quantity_edit_text_update"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="enter product\nquantity"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Price Per Unit:"
+            android:textStyle="bold"
+            android:fontFamily="@font/aclonica"
+            android:textColor="@android:color/black"
+            android:textSize="23sp"/>
+
+        <EditText
+            android:id="@+id/price_per_unit_edit_text_update"
+            android:layout_marginRight="10dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter price\nper unit"/>
+
+    </LinearLayout>
+
+</LinearLayout>

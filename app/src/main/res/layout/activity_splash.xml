@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EF9A9A"
+    tools:context=".SplashActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="INVENTORY\n\nMANAGEMENT\n\nSYSTEM"
+        android:textColor="#9b005f"
+        android:textSize="36dp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

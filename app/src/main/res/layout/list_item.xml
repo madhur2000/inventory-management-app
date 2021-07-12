@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/view_inventory_bg">
+
+
+        <ImageView
+            android:id="@+id/product_image_image_view"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_not_found" />
+
+        <TextView
+            android:id="@+id/product_name_text_view"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:padding="3dp"
+            android:text="Deodrant"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:fontFamily="@font/aclonica" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:padding="3dp"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:text="Quantity: "
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/holo_green_dark" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:padding="3dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="match_parent"
+                android:text="Price: "
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:id="@+id/price_text_view"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="₹300"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_green_dark" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
